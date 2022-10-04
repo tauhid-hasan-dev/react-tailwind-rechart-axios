@@ -28,7 +28,7 @@ const Pricing = () => {
     return (
         <div className='text-center py-3 px-20'>
             <h2 className='text-4xl font font-semibold py-5'>Best Deal of the town</h2>
-            <div className='grid grid-cols-3  gap-4 '>
+            <div className='grid grid-cols-1  gap-10 md:grid-cols-2 lg:grid-cols-3 '>
                 {
                     pricingOptions.map(options => <PriceOption key={options.id} options={options} ></PriceOption>)
                 }
