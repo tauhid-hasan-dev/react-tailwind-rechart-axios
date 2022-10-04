@@ -22,13 +22,14 @@ const PhoneBar = () => {
     
     return (
         <div className='flex  justify-center'>
-           <BarChart width={1500} height={250} data={phones}>
+           <BarChart width={700} height={250} data={phones}>
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="name" />
                         <YAxis />
                         <Tooltip />
                         <Legend />
-                        <Bar dataKey="price" fill="#82ca9d" />
+                        <Bar dataKey="price" fill="red" />
+                        
             </BarChart>
         </div>
     );
